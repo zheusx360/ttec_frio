@@ -1,0 +1,138 @@
+
+.headerContainer{
+  height: 6.8rem;
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.8s;
+  background-color: rgba(61, 99, 155, 0.92);
+  z-index: 10;
+
+  @media (max-width: 500px){
+    display: none;
+  }
+
+}
+.headerContainerB{
+  height: 6.8rem;
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: 0.8s;
+  background-color: rgba(0, 38, 109, 0.5);
+
+  @media (max-width: 500px){
+    display: none;
+  }
+
+}
+
+.headerContent{
+  max-width: 1120px;
+  min-width: 348px;
+  height: 6rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+
+  img{
+    cursor: pointer;
+  }
+
+  nav{
+    margin-left: 5rem;
+    height: 6rem;
+
+    a{
+      display: inline-block;
+      position: relative;
+      padding: 0 0.5rem;
+      font-size: 1.3rem;
+      height: 6rem;
+      line-height: 6rem;
+      color: #fFF;
+      font-weight: 700;
+      transition: color 0.4s;
+      text-decoration: none;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+      border-radius: 6px;
+
+      & + a {
+        margin-left: 3rem;
+      }
+
+      &:hover{
+        color: #89b1ed;
+        height: 6rem;
+        border-radius: px;
+        border-top: 1px solid #89b1ed;
+        border-bottom: 1px solid #89b1ed;
+      }
+
+      &.active{
+        color: var(--yellow-500);
+        font-weight: bold;
+      }
+
+    }
+  }
+}
+.readyButton{
+  margin-left: auto;
+  height: 3rem;
+  border-radius: 3rem;
+  background: var(--blue-900);
+  border:0;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: bold;
+  transition: filter 0.2s;
+
+  &:hover{
+    filter: brightness(1.1)
+  }
+}
+
+@media (max-width: 870px){
+  .headerContainer{
+    transition: 0.8s;
+    height: 13rem;
+    padding: 0.5rem 0;
+  }
+  .headerContainerB{
+    transition: 0.8s;
+    height: 13rem;
+    padding: 0.5rem 0;
+  }
+
+  .headerContent{
+    transition: 0.8s;
+    display: flex;
+    flex-direction: column;
+
+    nav{
+      transition: 0.8s;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .readyButton{
+      transition: 0.8s;
+      display: none;
+    }
+  }
+}

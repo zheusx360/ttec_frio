@@ -1,0 +1,142 @@
+.container{
+  width: 100%;
+  height: auto;
+  padding-bottom: 75px;
+  // background-color: #74EBD5;
+  // background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+  background-color: #d5d5d5;
+  padding-top: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.titulo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span{
+    margin-top: 2px;
+    margin-bottom: 22px;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #3f73a7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0px 4px 5px rgb(131, 131, 131);
+  }
+}
+
+.content{
+  display: flex;
+  width: 100%;
+  max-width: 1700px;
+  height: 400px;
+  padding-left: 2%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+
+  @media (max-width: 900px){
+    flex-direction: column;
+    padding-left: 0;
+    height: auto;
+  }
+}
+
+.circle{
+  max-width: 330px;
+  max-height: 330px;
+  text-align: center;
+  width: 50vw;
+  height: 50vw;
+  z-index: 2;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #e1e1e1;
+  box-shadow:  20px 20px 60px #bebebe,
+  -20px -20px 60px #ffffff;
+  border: 3px solid #c9c9c9;
+  background-color: #3f73a7;
+  transition: .5s;
+
+  &:hover{
+    transform: scale(1.045);
+    border: 5px solid #c9c9c9;
+  }
+}
+
+.iconContent{
+  margin-top: 5vh;
+  @media (max-width: 870px){
+   margin-top: 22%;
+  }
+  @media (max-width: 675px){
+   margin-top: 30%;
+  }
+  @media (max-width: 500px){
+   margin-top: 20%;
+  }
+
+}
+
+.square{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e1e1e1;
+  width: 70%;
+  height: 220px;
+  border-radius: 0% 8% 10% 0% / 12% 69% 31% 10% ;
+  margin-top: 1%;
+  margin-left: -10%;
+  box-shadow:  20px 20px 60px #bebebe,
+  -20px -20px 60px #ffffff;
+  border: 3px solid #c9c9c9;
+
+  transition: .5s;
+
+  &:hover{
+    transform: scale(1.045);
+    border: 5px solid #c9c9c9;
+  }
+
+  padding: 0 5% 0 5%;
+
+  p{
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  span{
+    width: 74%;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  @media (max-width: 900px){
+    border-radius: 9% 8% 10% 11% / 66% 69% 31% 33% ;
+    margin-left: 0;
+    width: 90%;
+    padding: 2%;
+  }
+  @media (max-width: 545px){
+    height: auto;
+    p{
+      font-size: 1.3rem;
+      text-align: center;
+    }
+  }
+  @media (max-width: 501px){
+    p{
+      width: 80%;
+    }
+    span{
+      padding-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.main{
+  display: flex;
+  width: 10rem;
+  height: 3.8rem;
+  position: fixed;
+  justify-content: flex-end;
+  top: 88%;
+  bottom: 0;
+  left: 86%;
+  right: 0;
+  z-index: 11;
+  transition: 0.5s;
+
+  @media(max-width:1300px){
+   transition: 0.500s;
+   left: 83%;
+  }
+  @media(max-width:900px){
+   transition: 0.500s;
+   left: 78%;
+  }
+  @media(max-width:750px){
+   transition: 0.500s;
+   left: 75%;
+  }
+  @media(max-width:600px){
+   transition: 0.500s;
+   left: 70%;
+  }
+  @media(max-width:470px){
+   transition: 0.500s;
+   left: 63%;
+  }
+
+
+}
+
+.container{
+  width: 4rem;
+  height: 3.8rem;
+  background-image: url('../../../../public/Icons/whatsappicon.svg');
+  background-repeat: no-repeat;
+  z-index: 11;
+  cursor: pointer;
+
+  background-color: transparent;
+  border-radius: 30px;
+  border-color: transparent;
+
+  &:hover{
+    display: flex;
+    height: 3.8rem;
+    width: 10.2rem;
+    background-image: url('../../../../public/Icons/whatsappicon-hover.svg');
+  }
+}
+

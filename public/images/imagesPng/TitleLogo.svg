@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464.65 135.54">
+  <defs>
+    <style>
+      .a {
+        font-size: 71px;
+        stroke-width: 3px;
+        font-family: moon_get-Heavy, "MOON GET!";
+        font-weight: 800;
+      }
+
+      .a, .c, .f {
+        fill: #e30613;
+      }
+
+      .a, .c {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .b {
+        letter-spacing: -0.04em;
+      }
+
+      .c, .f {
+        font-size: 41px;
+        font-family: GillSansMT-Bold, Gill Sans MT;
+        font-weight: 700;
+      }
+
+      .c {
+        stroke-width: 6px;
+      }
+
+      .d {
+        letter-spacing: -0.01em;
+      }
+
+      .e {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <title>TitleLogo</title>
+  <text class="a" transform="translate(3 65.4)">TT<tspan class="b" x="111.9" y="0">E</tspan><tspan x="155.56" y="0">C FRIO</tspan></text>
+  <g>
+    <text class="c" transform="translate(50.05 119.45)">câmaras fri<tspan class="d" x="214.19" y="0">g</tspan><tspan class="e" x="236.01" y="0">oríficas</tspan></text>
+    <text class="f" transform="translate(50.05 119.45)">câmaras fri<tspan class="d" x="214.19" y="0">g</tspan><tspan class="e" x="236.01" y="0">oríficas</tspan></text>
+  </g>
+</svg>
