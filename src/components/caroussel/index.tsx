@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '@coreui/coreui/dist/css/coreui.min.css'
 import Carousel from 'react-bootstrap/Carousel'
-import Image from 'next/image'
 import styles from './carousel.module.scss'
 import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-icons/bs';
 
@@ -22,9 +21,9 @@ export function Carossel(){
       setIndice(i)
       setTimeout(() => {
         if(i){
-          setTheme(styles.imageBack)
-        }else{
           setTheme(styles.customImage)
+        }else{
+          setTheme(styles.imageBack)
         }
       }, 190);
   }
@@ -35,9 +34,8 @@ export function Carossel(){
   <Carousel fade interval={8000} nextIcon={nextIcon} prevIcon={prevIcon} pause={false} indicators={false} onSelect={() => ResetValues()}>
     <Carousel.Item className={theme}>
       <div className="unset-img full-bleed">
-        <Image
+        <img style={{width:'100%', height:'100vh'}}
           src="/images/ImagesCarousel/freezer1.jpg"
-          layout='fill'
           alt="First slide"
         />
       </div>
@@ -48,9 +46,8 @@ export function Carossel(){
     </Carousel.Item>
     <Carousel.Item className={theme}>
       <div className="unset-img full-bleed">
-        <Image
+        <img style={{width:'100%', height:'100vh'}}
           src="/images/ImagesCarousel/freezer2.jpg"
-          layout='fill'
           alt="Second slide"
         />
       </div>
@@ -61,9 +58,8 @@ export function Carossel(){
     </Carousel.Item>
     <Carousel.Item className={theme}>
       <div className="unset-img full-bleed">
-      <Image
+      <img style={{width:'100%', height:'100vh'}}
         src="/images/ImagesCarousel/freezer3.jpg"
-        layout='fill'
         alt="Second slide"
       />
       </div>
@@ -74,9 +70,8 @@ export function Carossel(){
     </Carousel.Item>
     <Carousel.Item className={theme}>
       <div className="unset-img full-bleed">
-      <Image
+      <img style={{width:'100%', height:'100vh'}}
         src="/images/ImagesCarousel/clientes.jpg"
-        layout='fill'
         alt="Second slide"
       />
       </div>

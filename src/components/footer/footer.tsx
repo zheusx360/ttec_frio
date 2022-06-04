@@ -1,5 +1,4 @@
 import styles from './footer.module.scss'
-import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -9,7 +8,7 @@ export default function Footer() {
         <p>Fale conosco pelo Whatsapp</p>
         <span>
           <div className={styles.imagem}>
-            <Image src={"/images/imagesPng/whatsApp.png"} alt={'WhatsApp'} width={25} height={25}/>
+            <img src={"/images/whatsApp.png"} alt={'WhatsApp'} width={25} height={25}/>
           </div>
           11 94645-8365
         </span>

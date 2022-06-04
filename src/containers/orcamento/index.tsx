@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
-import Icon from '../../../public/images/IconIgluCircle.svg'
+import Icone from '../../../public/images/IconIgluCircle.svg';
+import SVG, { Props as SVGProps } from 'react-inlinesvg';
 import style from './servicos.module.scss'
 import Input from '../../components/input'
 import { BsFileText } from 'react-icons/bs';
@@ -70,7 +70,9 @@ export function Orcamento() {
     <div className={style.container}>
       <div className={style.leftContent}>
         <div className={style.iconContent}>
-          <Image src={Icon} width={145} height={145} alt="TTECFRIO" />
+          {/* <img src={Icone} alt='TTECFRIO' /> */}
+          {/* <Icone/> */}
+          <img src="/IconIgluCircle.svg" alt="Logo" />
         </div>
         <span>SOLICITE UM ORÇAMENTO CONOSCO</span>
         <p>Preencha os dados do formulário e receba um super desconto em nossos serviços para sua casa ou empresa, com a TTEC FRIO você sempre ganha!</p>

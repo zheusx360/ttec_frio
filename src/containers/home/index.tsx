@@ -1,6 +1,5 @@
 import { Carossel } from '../../components'
 import styles from './home.module.scss'
-import Image from 'next/image'
 import { Button } from '../../components/buttons/animatedButton'
 import Router from "next/router"
 
@@ -13,7 +12,7 @@ export function Home() {
         <div className={styles.column}>
           <div className={styles.row}>
             <div className={styles.content}>
-              <Image src="/images/ImagesCarousel/satisfacao.jpg" alt="Satisfação" width={500} height={500} />
+              <img src="/images/ImagesCarousel/satisfacao.jpg" alt="Satisfação" width={400} height={350} />
             </div>
             <div className={styles.contentText}>
               <span>Excelência no Atendimento</span><br />
@@ -33,7 +32,7 @@ export function Home() {
               <p>&bull; Equipamentos modernos</p>
             </div>
             <div className={styles.content}>
-              <Image src="/images/ImagesCarousel/freezer6.jpg" alt="Técnologia" width={500} height={500} />
+              <img src="/images/ImagesCarousel/freezer6.jpg" alt="Técnologia" width={400} height={350} />
             </div>
           </div>
         </div>
@@ -43,7 +42,7 @@ export function Home() {
         <section className={styles.sectionTop}>
           <div className={styles.imageSection}>
             <span>
-              <Image src="/images/ImagesCarousel/qualidade.jpg" alt="Eficiencia" width={420} height={350} />
+              <img src="/images/ImagesCarousel/qualidade.jpg" alt="Eficiencia" width={420} height={350} />
             </span>
             <div className={styles.imageText}>
               <p>Qualidade e agilidade</p>

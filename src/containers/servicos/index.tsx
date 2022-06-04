@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import IconsAnimated from '../../components/IconsAnimated'
 
 import styles from './servicos.module.scss'
@@ -11,7 +10,7 @@ export function Servicos() {
       </div>
       <div className={styles.content}>
         <div className={styles.circle}>
-          <Image src="/images/ImagesCarousel/freezer4.jpg" alt="Satisfação" width={500} height={500} />
+          <img src="/images/ImagesCarousel/freezer4.jpg" alt="Satisfação" width={500} height={500} />
         </div>
         <div className={styles.square}>
           <p>Manutencao de câmaras frias</p>
@@ -20,7 +19,7 @@ export function Servicos() {
       </div>
       <div className={styles.content}>
         <div className={styles.circle}>
-          <Image src="/images/ImagesCarousel/monitorar.jpg" alt="Satisfação" width={500} height={500} />
+          <img src="/images/ImagesCarousel/monitorar.jpg" alt="Satisfação" width={500} height={500} />
         </div>
         <div className={styles.square}>
           <p>Sitema de alarmes</p>
@@ -29,7 +28,7 @@ export function Servicos() {
       </div>
       <div className={styles.content}>
         <div className={styles.circle}>
-          <Image src="/images/ImagesCarousel/freezer3.jpg" alt="Satisfação" width={500} height={500} />
+          <img src="/images/ImagesCarousel/freezer3.jpg" alt="Satisfação" width={500} height={500} />
         </div>
         <div className={styles.square}>
           <p>Montagem e desmontagem de câmaras frias</p>

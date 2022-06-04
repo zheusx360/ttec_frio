@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import styles from './styles.module.scss'
-import Image from 'next/image'
-import icon from '../../../public/images/imagesPng/IgluIcon.svg'
-import texto from '../../../public/images/imagesPng/TitleLogo.svg'
 import { NavbarAnimated } from '../navBarAnimated/navbar'
 import { BsJustifyRight, BsXLg } from 'react-icons/bs';
 import Router from "next/router"
@@ -44,10 +41,10 @@ export function HeaderMobile(){
     <div className={`${theme === 2 ? styles.headerContainerB : styles.headerContainer}`} hidden={!closeMenu}>
       <div className={styles.content}>
         <div className={styles.icone}>
-          <Image onClick={() => Router.push('/')} src={icon} width={60} height={55} alt="Icon"/>
+          <img onClick={() => Router.push('/')} src={'/IgluIcon.svg'} width={60} height={55} alt="Icon"/>
         </div>
         <div className={styles.center}>
-          <Image onClick={() => Router.push('/')} src={texto} width={140} height={58} alt="Icon"/>
+          <img onClick={() => Router.push('/')} src={'/TitleLogo.svg'} width={140} height={58} alt="Icon"/>
         </div>
         <div className={styles.toggle} onClick={() => setcloseMenu(false)}>
             <BsJustifyRight/>

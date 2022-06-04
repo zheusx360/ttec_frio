@@ -52,6 +52,15 @@
     height: 3.8rem;
     width: 10.2rem;
     background-image: url('../../../../public/Icons/whatsappicon-hover.svg');
+    @media(max-width:500px){
+      transition: .2s;
+      filter: contrast(1.6);
+      transform: scale(1.02);
+      width: 4rem;
+      height: 3.8rem;
+      background-image: url('../../../../public/Icons/whatsappicon.svg');
+    }
   }
+
 }
 

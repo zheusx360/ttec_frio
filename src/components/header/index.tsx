@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import styles from './styles.module.scss'
-import Image from 'next/image'
-import title from '../../../public/images/LogoMenu.svg'
 import { NavbarAnimated } from '../navBarAnimated/navbar'
 import Router from "next/router"
 
@@ -27,7 +25,7 @@ export function Header(){
       <div className="nav-scrolled">
        <div className={styles.headerContent}>
           <a>
-            <Image onClick={() => Router.push('/')} src={title} width={310} alt="TTECFRIO"/>
+            <img onClick={() => Router.push('/')} src={'/LogoMenu.svg'} width={310} alt="TTECFRIO"/>
           </a>
           <a>
             <NavbarAnimated closeVisible={() => {}} marginLeft={40}/>
