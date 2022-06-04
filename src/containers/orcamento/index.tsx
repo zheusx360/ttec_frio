@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import Icone from '../../../public/images/IconIgluCircle.svg';
-import SVG, { Props as SVGProps } from 'react-inlinesvg';
 import style from './servicos.module.scss'
 import Input from '../../components/input'
 import { BsFileText } from 'react-icons/bs';
