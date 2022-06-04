@@ -7,7 +7,7 @@ import { BsFileText } from 'react-icons/bs';
 import { Button } from '../../components/buttons/animatedButton'
 import dayjs from 'dayjs'
 import IconsAnimated from '../../components/IconsAnimated'
-import api from '../../pages/api/baseUrl'
+import api from '../../utils/baseUrl'
 
 export function Orcamento() {
   const [nome, setName] = useState('')
