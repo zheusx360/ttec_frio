@@ -8,7 +8,8 @@
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "deploy-static": "npm run build && npm run export"
+    "deploy-static": "npm run build && npm run export",
+    "start-static":"/out/index.html"
   },
   "dependencies": {
     "@coreui/coreui": "^4.1.4",

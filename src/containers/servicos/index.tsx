@@ -10,7 +10,7 @@ export function Servicos() {
       </div>
       <div className={styles.content}>
         <div className={styles.circle}>
-          <img src="/images/ImagesCarousel/freezer4.jpg" alt="Satisfação" width={500} height={500} />
+          <img src="/images/ImagesCarousel/freezer4.jpg" alt="Satisfação" width={'100%'} height={'100%'} />
         </div>
         <div className={styles.square}>
           <p>Manutencao de câmaras frias</p>
@@ -19,7 +19,7 @@ export function Servicos() {
       </div>
       <div className={styles.content}>
         <div className={styles.circle}>
-          <img src="/images/ImagesCarousel/monitorar.jpg" alt="Satisfação" width={500} height={500} />
+          <img src="/images/ImagesCarousel/monitorar.jpg" alt="Satisfação" width={'100%'} height={'100%'} />
         </div>
         <div className={styles.square}>
           <p>Sitema de alarmes</p>
@@ -28,7 +28,7 @@ export function Servicos() {
       </div>
       <div className={styles.content}>
         <div className={styles.circle}>
-          <img src="/images/ImagesCarousel/freezer3.jpg" alt="Satisfação" width={500} height={500} />
+          <img src="/images/ImagesCarousel/freezer3.jpg" alt="Satisfação" width={'100%'} height={'100%'} />
         </div>
         <div className={styles.square}>
           <p>Montagem e desmontagem de câmaras frias</p>
