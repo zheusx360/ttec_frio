@@ -185,6 +185,10 @@ max-width: 1300px;
       border-radius: 22px;
     }
 
+    @media (max-width: 500px){
+      filter: sepia(0%) blur(0px);
+    }
+
   }
   @media (max-width: 1010px){
     padding: 10% 0 10% 2%;

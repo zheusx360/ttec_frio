@@ -38,7 +38,7 @@ export function HeaderMobile() {
       <div className={styles.menuMobile} hidden={closeMenu}>
         <div className={styles.topContainer}>
           <div className={styles.topImageContainer}>
-            <img onClick={() => Navigate('/')} src={'/TitleLogo.svg'} width={120} height={60} alt="Icon" />
+            <img onClick={() => Navigate('/')} src={'/TitleMobile.svg'} width={120} height={60} alt="Icon" />
           </div>
         </div>
         <div onClick={() => setcloseMenu(true)} className={styles.closeButton}>
@@ -65,7 +65,7 @@ export function HeaderMobile() {
             <img onClick={() => Router.push('/')} src={'/IgluIcon.svg'} width={60} height={55} alt="Icon" />
           </div>
           <div className={styles.center}>
-            <img onClick={() => Router.push('/')} src={'/TitleLogo.svg'} width={140} height={58} alt="Icon" />
+            <img onClick={() => Router.push('/')} src={'/TitleMobile.svg'} width={140} height={58} alt="Icon" />
           </div>
           <div className={styles.toggle} onClick={() => setcloseMenu(false)}>
             <BsJustifyRight />
