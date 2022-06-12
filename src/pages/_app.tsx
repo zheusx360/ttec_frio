@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   <>
     <header>
       <title>TTEC FRIO - Câmaras frigoríficas</title>
+      <meta name="google-site-verification" content="TQrIYboCQV1vHbVKDskGx4K0tU2RiLF_nnzKKtYWkFs" />
     </header>
     <WhatsAppButton/>
     <Header/>
