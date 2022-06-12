@@ -49,6 +49,13 @@
 
 }
 
+.footer{
+  margin-top: 4px;
+  @media (max-width: 500px){
+    margin-top: 12px;
+  }
+}
+
 .imagem{
     margin-right: 10px;
 }

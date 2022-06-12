@@ -13,7 +13,9 @@ export default function Footer() {
           11 94645-8365
         </span>
       </div>
+      <footer className={styles.footer}>
           <p>&copy; TTEC FRIO Todos os direitos reservados.</p>
+      </footer>
     </div>
   )
 }

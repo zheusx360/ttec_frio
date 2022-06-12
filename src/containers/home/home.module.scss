@@ -46,6 +46,11 @@
       filter: sepia(0%) blur(0);
       border-radius: 23px;
     }
+
+    @media (max-width: 500px){
+      filter: sepia(0%) blur(0);
+    }
+
   }
 
   @media (max-width: 420px){
