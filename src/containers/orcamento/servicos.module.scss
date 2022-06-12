@@ -131,6 +131,11 @@
   span{
     margin-bottom: 2rem;
   }
+
+  @media (max-width: 600px){
+    width: 80%;
+  }
+
 }
 
 .btMessage{

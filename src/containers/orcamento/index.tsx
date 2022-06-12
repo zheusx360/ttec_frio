@@ -41,15 +41,44 @@ export function Orcamento() {
     setText('')
   }
 
+  // const sendEmail = () => {
+  //   if (verificaCampos()) {
+  //     setLoading(true)
+  //     api.post('/ttecSend', {
+  //         nome,
+  //         fone,
+  //         email,
+  //         text,
+  //         data
+  //     }).then((response) => {
+  //       setLoading(false)
+  //       setTxtSend('Email enviado com sucesso! Aguarde nosso contato.')
+  //       setSucesso(true)
+  //     }).catch((error) => {
+  //       setLoading(false)
+  //       console.log(error)
+  //       setTxtSend('Erro ao enviar o email!')
+  //       setSucesso(true)
+  //     })
+  //     Sucess()
+  //   }
+  // }
+
   const sendEmail = () => {
     if (verificaCampos()) {
       setLoading(true)
-      api.post('/ttecSend', {
+      fetch('/api/email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
           nome,
           fone,
           email,
           text,
           data
+        })
       }).then((response) => {
         setLoading(false)
         setTxtSend('Email enviado com sucesso! Aguarde nosso contato.')
@@ -63,6 +92,7 @@ export function Orcamento() {
       Sucess()
     }
   }
+
 
   return (
     <div className={style.container}>
