@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className={styles.footerContainer}>
       <div className={styles.textContent}>
-        <p>TTEC FRIO - CÂMARAS FRIGORÍFICAS</p>
+        <p>TTEC FRIO - CÂMARAS FRIGORÍFICAS.</p>
         <p>Fale conosco pelo Whatsapp.</p>
         <span>
           <div className={styles.imagem}>
